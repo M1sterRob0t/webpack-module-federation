@@ -1,0 +1,67 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.app {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-family: Verdana, sans-serif;
+    color: orange;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.button {
+    display: block;
+    
+    font-family: inherit;
+    font-size: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    
+    cursor: pointer;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: darken($color: orange, $amount: 3%);
+    }
+
+    &:active {
+        background-color: darken($color: orange, $amount: 5%);
+    }
+
+    
+}
+
+.errorButton {
+    display: block;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: darken($color: red, $amount: 3%);
+    }
+
+    &:active {
+        background-color: darken($color: red, $amount: 5%);
+    }
+}

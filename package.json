@@ -1,0 +1,18 @@
+{
+  "name": "webpack-module-federation",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run shop\" \"npm run about\" \"npm run gallery\" \"npm run host\"",
+    "shop": "npm run start -w shop",
+    "about": "npm run start -w about", 
+    "gallery": "npm run start -w gallery", 
+    "host": "npm run start -w host"
+  },
+  "workspaces": [
+    "services/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
